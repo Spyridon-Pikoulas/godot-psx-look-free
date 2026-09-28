@@ -4,7 +4,7 @@ config_version=5
 [application]
 
 config/name="PSX Look Free"
-run/main_scene="res://demo/demo.tscn"
+run/main_scene="res://addons/psx_look/demo/demo.tscn"
 config/features=PackedStringArray("4.3")
 
 [display]

@@ -2,7 +2,7 @@ extends Node
 ## The level through PSXScreen with its materials converted by PSX.convert, and a switch for
 ## every part of the look.
 
-const World := preload("res://demo/world.gd")
+const World := preload("res://addons/psx_look/demo/world.gd")
 const RESOLUTIONS := [[240, "240p"], [480, "480p"], [1080, "Native"]]
 
 ## Hides the panel, for the store captures.

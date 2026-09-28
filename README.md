@@ -36,7 +36,7 @@ for water and glass, and sphere-mapped chrome. Same code: install it over this o
 
 ### Install
 
-Copy `addons/psx_look/` into your project. Open `demo/demo.tscn` to try it.
+Copy `addons/psx_look/` into your project. Open `addons/psx_look/demo/demo.tscn` to try it.
 
 ### License
 

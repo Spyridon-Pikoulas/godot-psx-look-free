@@ -3,7 +3,7 @@ extends Node3D
 ## at dusk, with torches, a pool and a floating gem over an altar. The camera tours it, or walks
 ## with WASD or the arrow keys and looks with the mouse held down.
 
-const Shapes := preload("res://demo/shapes.gd")
+const Shapes := preload("res://addons/psx_look/demo/shapes.gd")
 
 ## Seconds into the tour; store scenes pin it for a still.
 @export var t := 0.0
@@ -174,7 +174,7 @@ func _altar(p: Vector3) -> void:
 
 func _mat(name: String) -> StandardMaterial3D:
 	if name not in _tex:
-		_tex[name] = load("res://demo/art/%s.png" % name)
+		_tex[name] = load("res://addons/psx_look/demo/art/%s.png" % name)
 	var m := StandardMaterial3D.new()
 	m.albedo_texture = _tex[name]
 	m.roughness = 0.9
