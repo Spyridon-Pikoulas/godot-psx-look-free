@@ -2,6 +2,10 @@
 
 PS1-style 3D for Godot 4.3+ (Forward+, Mobile, Compatibility).
 
+**The full pack:** **[PSX Look](https://heyheythere.itch.io/psx-look)** adds the PS1's 15-bit colour and its 4x4
+dither on PSXScreen, and four more materials: unlit, cutout for foliage and fences, transparent
+for water and glass, and sphere-mapped chrome. Same code: install it over this one.
+
 ## Use
 
 ```gdscript

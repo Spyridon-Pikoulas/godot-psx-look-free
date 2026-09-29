@@ -10,6 +10,12 @@ psx.viewport.add_child(level)
 PSX.convert(level)   # every StandardMaterial3D becomes its PS1 version
 ```
 
+### Want more?
+
+**[PSX Look](https://heyheythere.itch.io/psx-look)** adds the PS1's 15-bit colour and its 4x4
+dither on PSXScreen, and four more materials: unlit, cutout for foliage and fences, transparent
+for water and glass, and sphere-mapped chrome. Same code: install it over this one.
+
 ### What's inside
 
 - **Vertex snap:** vertices land on the low-res pixel grid, so edges jitter as the camera moves.
@@ -21,12 +27,6 @@ PSX.convert(level)   # every StandardMaterial3D becomes its PS1 version
   scrolling) and **PSX.convert**, which turns an imported level's StandardMaterial3Ds into it.
 - **Demo:** a ruined courtyard at dusk with torches and 9 PS1-style textures. Walk it right here
   in the browser.
-
-### Want more?
-
-**[PSX Look](https://heyheythere.itch.io/psx-look)** adds the PS1's 15-bit colour and its 4x4
-dither on PSXScreen, and four more materials: unlit, cutout for foliage and fences, transparent
-for water and glass, and sphere-mapped chrome. Same code: install it over this one.
 
 ### Compatibility
 
