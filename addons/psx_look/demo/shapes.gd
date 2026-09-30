@@ -46,10 +46,10 @@ static func pillar(radius: float, height: float, sides := 8, tile := 1.0) -> Arr
 		var u0 := around * i / sides / tile
 		var u1 := around * (i + 1) / sides / tile
 		var v := height / tile
-		_tri(st, [p0, p1 + Vector3.UP * height, p1], [Vector2(u0, v), Vector2(u1, 0), Vector2(u1, v)], n)
-		_tri(st, [p0, p0 + Vector3.UP * height, p1 + Vector3.UP * height], [Vector2(u0, v), Vector2(u0, 0), Vector2(u1, 0)], n)
+		_tri(st, [p0, p1, p1 + Vector3.UP * height], [Vector2(u0, v), Vector2(u1, v), Vector2(u1, 0)], n)
+		_tri(st, [p0, p1 + Vector3.UP * height, p0 + Vector3.UP * height], [Vector2(u0, v), Vector2(u1, 0), Vector2(u0, 0)], n)
 		var top := Vector3.UP * height
-		_tri(st, [top, top + p1, top + p0], [Vector2(0.5, 0.5), _cap_uv(a1), _cap_uv(a0)], Vector3.UP)
+		_tri(st, [top, top + p0, top + p1], [Vector2(0.5, 0.5), _cap_uv(a0), _cap_uv(a1)], Vector3.UP)
 	st.generate_tangents()
 	return st.commit()
 
@@ -91,7 +91,7 @@ static func gem(radius: float, height: float) -> ArrayMesh:
 		var a := ring[i]
 		var b := ring[(i + 1) % 6]
 		for tip in [Vector3.UP * height * 0.5, Vector3.DOWN * height * 0.5]:
-			var tri := [tip, b, a] if tip.y > 0 else [tip, a, b]
+			var tri := [tip, a, b] if tip.y > 0 else [tip, b, a]
 			var n: Vector3 = (tri[1] - tri[0]).cross(tri[2] - tri[0]).normalized()
 			_tri(st, tri, [Vector2(0.5, 0), Vector2(1, 1), Vector2(0, 1)], -n)
 	st.generate_tangents()
