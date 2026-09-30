@@ -28,6 +28,12 @@ for water and glass, and sphere-mapped chrome. Same code: install it over this o
 - **Demo:** a ruined courtyard at dusk with torches and 9 PS1-style textures. Walk it right here
   in the browser.
 
+### Props for it
+
+**[PSX Horror Props](https://heyheythere.itch.io/psx-horror-props)**: 64 PS1-style survival horror
+props made to go through this shader, 18 of them animated, with a Godot addon.
+[12 of them are free](https://heyheythere.itch.io/psx-horror-props-free).
+
 ### Compatibility
 
 - Godot **4.3 to 4.7**, tested on both ends.
